@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CollectionsFirstMod/CollectionsFirstMod.iml" filepath="$PROJECT_DIR$/CollectionsFirstMod/CollectionsFirstMod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatabaseSixthModPartOne/DatabaseSixthModPartOne.iml" filepath="$PROJECT_DIR$/DatabaseSixthModPartOne/DatabaseSixthModPartOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericSecondMod/GenericSecondMod.iml" filepath="$PROJECT_DIR$/GenericSecondMod/GenericSecondMod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultithreadingThirdModPartOne/MultithreadingThirdModPartOne.iml" filepath="$PROJECT_DIR$/MultithreadingThirdModPartOne/MultithreadingThirdModPartOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultithreadingThirdModulePartTwo/MultithreadingThirdModulePartTwo.iml" filepath="$PROJECT_DIR$/MultithreadingThirdModulePartTwo/MultithreadingThirdModulePartTwo.iml" />
+    </modules>
+  </component>
+</project>
