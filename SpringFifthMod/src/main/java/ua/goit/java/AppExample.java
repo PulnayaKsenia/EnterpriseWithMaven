@@ -33,8 +33,10 @@ public class AppExample {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+            System.out.println("Enter numbers and operator in next format 'operator,number1,number2'" +
+                    "or enter 'Exit' for exit:");
             String expression = scanner.nextLine();
-            if (expression.equals("exit")) break;
+            if (expression.equals("Exit")) break;
             System.out.println(calc.calculate(expression));
         }
     }
