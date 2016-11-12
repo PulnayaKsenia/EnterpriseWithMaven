@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" strict="true" name="AppLogConfig"
+               monitorInterval="60">
+
+    <Properties>
+        <Property name="logPath">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Appender type="Console" name="STDOUT">
+            <Layout type="PatternLayout"
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%t] %c{1.} - %msg%n"/>
+        </Appender>
+
+        <Appender type="RollingFile" name="RollingFile" fileName="${logPath}/app.log"
+                  filePattern="${logPath}/$${date:yyyy-MM}/app-%d{yyyyMMdd}.log.gz">
+            <Layout type="PatternLayout"
+                    pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%t] %c{1.} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="1MB"/>
+            </Policies>
+        </Appender>
+    </Appenders>
+
+
+    <Loggers>
+        <Logger name="com.company.config.AopConfig" level="debug" additivity="false">
+            <AppenderRef ref="RollingFile"/>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+
+        <Root level="trace">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>

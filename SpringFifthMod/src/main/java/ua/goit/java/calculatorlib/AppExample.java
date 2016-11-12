@@ -1,4 +1,4 @@
-package ua.goit.java;
+package ua.goit.java.calculatorlib;
 
 import ua.goit.java.calculatorlib.Calculator;
 import ua.goit.java.calculatorlib.StandardCalculatorImpl;
